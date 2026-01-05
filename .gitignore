@@ -1,2 +1,7 @@
 *.pyc
 __pycache__/
+build.txt
+build/
+.vscode/
+dist/
+RE7-PyTrainer.spec
