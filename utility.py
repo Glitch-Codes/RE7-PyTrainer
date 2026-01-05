@@ -226,7 +226,7 @@ def nopBytes(handle, destination, size):
 
 def findCodeCave(process, opcode_addr, original_byte_size, jump_back_size):
     # Search for writable memory within 2GB that we can use for our code cave
-    # We need space for: original instruction (6 bytes) + jump back (5 bytes) = 11 bytes minimum
+    # We need space for: original instruction  + jump back 
     newmem = None
     
     hook_rip = opcode_addr + original_byte_size
